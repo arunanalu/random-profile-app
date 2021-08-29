@@ -1,5 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import '../css/profile.css'
 
 class Profile extends React.Component {
 
@@ -11,24 +12,26 @@ class Profile extends React.Component {
   render() {
     const { name, user, loading } = this.props;
 
-    if (loading) return <p>loading</p>
+    if (loading) return <div className="loading"><p>loading</p></div>
 
     return(
-      <>
-        <h3>Profile</h3>
-        <div>
-          <p>{ `${name} ${user.name.last}, ${user.dob.age}` }</p>
-          <div>
+      <div>
+        <h2>PROFILE</h2>
+        <div className="profile-section">
+          <p className="name">{ `${name} ${user.name.last}, ${user.dob.age}` }</p>
+          <div className="profile-info">
             <img src={ user.picture.large } alt="people"/>
-            <div>
+            <div className="bar" />
+            <div className="profile-details">
               <p>{`Contry: ${user.location.country}, ${user.location.state}`}</p>
               <p>{`Email: ${user.email}`}</p>
               <p>{`Cell phone: ${user.cell}`}</p>
               <button onClick={ this.backButton }>Voltar</button>
             </div>
           </div>
+          <div className="control" />
         </div>
-      </>
+      </div>
     )
   }
 }

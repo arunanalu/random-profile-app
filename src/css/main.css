@@ -1,0 +1,22 @@
+body {
+  background-color: rgba(68, 37, 139, 0.281);
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+  /* border: 4px solid white; */
+}
+
+input {
+  margin: 0 15px;
+  width: 200px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+label {
+  font-size: 18px;
+}

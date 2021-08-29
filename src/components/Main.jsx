@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { getFetchUser, getName } from '../redux/actions'
+import '../css/main.css'
 
 class Main extends React.Component {
   constructor(props) {
@@ -30,13 +31,15 @@ class Main extends React.Component {
   render() {
     const { input, disable } = this.state
     return(
-      <div>
-        <h2>Random profile generator</h2>
-        <label htmlFor="input">
-          Enter a name:
-          <input type="text" id="input" value={ input } onChange={this.handleChange}/>
-        </label>
-        <button disabled={ !disable } onClick={this.submiteButton}>Create</button>
+      <div className="main-section">
+        <h2>Random Profile Generator</h2>
+        <div className="input-section">
+          <label htmlFor="input">
+            Enter a name:
+            <input type="text" id="input" value={ input } onChange={this.handleChange}/>
+          </label>
+          <button disabled={ !disable } onClick={this.submiteButton}>Create</button>
+        </div>
       </div>
     )
   }

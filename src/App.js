@@ -2,6 +2,7 @@ import React from 'react'
 import { Route, Switch } from 'react-router'
 import Main from './components/Main'
 import Profile from './components/Profile'
+import './css/app.css'
 
 export default class App extends React.Component {
   render() {

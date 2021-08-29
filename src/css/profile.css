@@ -1,0 +1,67 @@
+h2 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.profile-section {
+  /* border: 2px solid white; */
+  box-shadow: 0px 0px 5px white;
+  margin: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  align-self: center;
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+img {
+  width: 250px;
+  border-radius: 5px;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid white; */
+}
+
+.profile-details  p {
+  margin: 8px 0;
+}
+
+button {
+  align-self: center;
+  margin-top: 25px;
+}
+
+.control {
+  height: 40px;
+}
+
+.bar {
+  height: 100px;
+  width: 1px;
+  background-color: white;
+}
+
+.loading {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  margin: auto;
+  margin-top: 20%;
+}
